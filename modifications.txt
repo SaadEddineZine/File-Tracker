@@ -1,0 +1,39 @@
+2024-11-13 16:43:49 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:43:56 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:44:02 - Supprimé : ./repertoireTest\fichier_important2.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 16:44:06 - Modifié : ./repertoireTest\New Text Document.txt
+2024-11-13 16:49:27 - Supprimé : ./repertoireTest\test.txt
+2024-11-13 16:49:31 - Supprimé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:49:33 - Supprimé : ./repertoireTest\seddz.txt
+2024-11-13 16:49:57 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:50:12 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:50:50 - Modifié : ./repertoireTest\fichier_important.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 16:51:00 - Modifié : ./repertoireTest\fichier_important.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 16:51:00 - Supprimé : ./repertoireTest\fichier_important.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 16:54:08 - Supprimé : ./repertoireTest\seddz.txt
+2024-11-13 16:58:17 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:58:28 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:58:41 - Supprimé : ./repertoireTest\test.txt
+2024-11-13 16:58:53 - Supprimé : ./repertoireTest\test2.txt
+2024-11-13 16:59:08 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 16:59:20 - Supprimé : ./repertoireTest\testing.txt
+2024-11-13 17:02:54 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 17:03:12 - Supprimé : ./repertoireTest\test.txt
+2024-11-13 17:06:17 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 17:06:52 - Modifié : ./repertoireTest\test.txt
+2024-11-13 17:07:18 - Supprimé : ./repertoireTest\test.txt
+2024-11-13 17:07:41 - Supprimé : ./repertoireTest\.txt
+2024-11-13 17:27:11 - Créé : ./repertoireTest\sensible.txt
+2024-11-13 17:27:11 - Modifié : ./repertoireTest\sensible.txt
+2024-11-13 17:27:34 - Créé : ./repertoireTest\sensible.txt
+2024-11-13 17:27:34 - Modifié : ./repertoireTest\sensible.txt
+2024-11-13 20:19:34 - Créé : ./repertoireTest\New Text Document.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 20:20:21 - Modifié : ./repertoireTest\seddz.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 20:27:10 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-13 20:27:32 - Modifié : ./repertoireTest\testing.txt
+2024-11-13 20:27:43 - Modifié : ./repertoireTest\seddz.txt
+2024-11-13 20:27:56 - Modifié : ./repertoireTest\saad.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 20:28:25 - Créé : ./repertoireTest\backup.txt
+2024-11-13 20:28:25 - Modifié : ./repertoireTest\backup.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 20:28:49 - Modifié : ./repertoireTest\backup.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-13 20:29:08 - Créé : ./repertoireTest\New Text Document.txt
