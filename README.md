@@ -65,3 +65,8 @@ This import brings in the FileSystemEventHandler class, which is a base class fo
 
 `import threading`
 **The threading module** allows for the creation and management of threads in Python. This is useful for running tasks concurrently, such as monitoring file changes without freezing the GUI. In this code, threading is used to run the file monitoring process in a separate thread, ensuring that the user interface remains responsive while the application is actively monitoring the specified directory.
+
+Hashing in computer science and coding refers to the process of converting input data (often called a "message") into a fixed-size string of characters, which is typically a sequence of numbers and letters. This output is known as a "hash value" or "hash code." Hashing is commonly used for various purposes, including:
+
+Data Integrity: Hash functions can verify the integrity of data by producing a unique hash value for a given input. If the input data changes, even slightly, the hash value will change significantly, indicating that the data has been altered.
+Password Storage: Instead of storing plain-text passwords, systems often store the hash of the password. When a user logs in, the system hashes the entered password and compares it to the stored hash. This way, even if the database is compromised, the actual passwords remain secure.
