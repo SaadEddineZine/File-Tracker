@@ -37,3 +37,56 @@
 2024-11-13 20:28:25 - Modifié : ./repertoireTest\backup.txt [ALERTE : FICHIER SENSIBLE]
 2024-11-13 20:28:49 - Modifié : ./repertoireTest\backup.txt [ALERTE : FICHIER SENSIBLE]
 2024-11-13 20:29:08 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-20 10:45:22 - Créé : ./repertoireTest\New Text Document (2).txt
+2024-11-20 10:46:11 - Créé : ./repertoireTest\New Text Document (2).txt
+2024-11-20 10:46:37 - Modifié : ./repertoireTest\backup.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-20 10:46:54 - Modifié : ./repertoireTest\backup.txt
+2024-11-20 10:47:01 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-20 10:47:16 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-20 10:47:28 - Modifié : ./repertoireTest\nouveau.txt
+2024-11-20 10:47:56 - Créé : ./repertoireTest\sensible.py
+2024-11-20 10:47:56 - Modifié : ./repertoireTest\sensible.py [ALERTE : FICHIER SENSIBLE]
+2024-11-20 11:29:53 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-20 11:30:05 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-20 11:30:21 - Modifié : ./repertoireTest\new.txt
+2024-11-20 11:30:21 - Modifié : ./repertoireTest\new.txt
+2024-11-20 11:31:03 - Modifié : ./repertoireTest\nouveau.txt
+2024-11-20 11:31:03 - Modifié : ./repertoireTest\nouveau.txt
+2024-11-20 11:31:09 - Modifié : ./repertoireTest\nouveau.txt
+2024-11-21 18:34:59 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-21 18:35:07 - Supprimé : ./repertoireTest\exemple.txt
+2024-11-21 18:35:20 - Modifié : ./repertoireTest\nouveau.txt
+2024-11-21 18:35:43 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-21 18:36:08 - Créé : ./repertoireTest\fichiersensible.txt
+2024-11-21 18:36:09 - Modifié : ./repertoireTest\fichiersensible.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-21 18:37:15 - Supprimé : ./repertoireTest\fichiersensible.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-21 18:39:17 - Créé : ./repertoireTest\test.txt
+2024-11-25 19:11:07 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-25 19:11:18 - Supprimé : ./repertoireTest\New Text Document.txt
+2024-11-25 19:11:32 - Créé : ./repertoireTest\sensible.txt
+2024-11-25 19:11:32 - Modifié : ./repertoireTest\sensible.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-25 19:11:58 - Supprimé : ./repertoireTest\sensible.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-25 19:21:24 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-25 19:21:39 - Supprimé : ./repertoireTest\New Text Document.txt
+2024-11-26 14:15:00 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-26 14:15:15 - Créé : ./repertoireTest\sensitive.txt
+2024-11-26 14:15:15 - Modifié : ./repertoireTest\sensitive.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-26 14:15:30 - Supprimé : ./repertoireTest\sensitive.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-26 23:48:00 - Créé : ./repertoireTest\New Text Document (2).txt
+2024-11-26 23:48:24 - Modifié : ./repertoireTest\New Text Document (2).txt
+2024-11-26 23:48:35 - Modifié : ./repertoireTest\New Text Document (2).txt
+2024-11-26 23:48:35 - Supprimé : ./repertoireTest\New Text Document (2).txt
+2024-11-26 23:49:16 - Créé : ./repertoireTest\s.txt
+2024-11-26 23:49:16 - Modifié : ./repertoireTest\s.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-26 23:49:59 - Supprimé : ./repertoireTest\s.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-27 00:14:42 - Créé : ./repertoireTest\sen.txt
+2024-11-27 00:14:42 - Modifié : ./repertoireTest\sen.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-27 00:15:03 - Supprimé : ./repertoireTest\sen.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-27 00:15:59 - Supprimé : ./repertoireTest\aj.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-27 00:16:16 - Créé : ./repertoireTest\j.txt
+2024-11-27 00:16:16 - Modifié : ./repertoireTest\j.txt [ALERTE : FICHIER SENSIBLE]
+2024-11-27 00:16:45 - Supprimé : ./repertoireTest\j.txt
+2024-11-27 00:16:45 - Supprimé : ./repertoireTest\New Text Document.txt
+2024-11-27 00:16:54 - Créé : ./repertoireTest\New Text Document.txt
+2024-11-27 00:17:09 - Créé : ./repertoireTest\sensible.txt
+2024-11-27 00:17:09 - Modifié : ./repertoireTest\sensible.txt [ALERTE : FICHIER SENSIBLE]

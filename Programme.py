@@ -1,4 +1,5 @@
 import os
+import pygame
 import time
 import shutil
 import hashlib
@@ -8,30 +9,49 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import threading
 
-# Chemin du répertoire à surveiller
 DIR_TO_WATCH = "./repertoireTest"
-# Fichier de journal pour enregistrer les modifications
+
 LOG_FILE = "modifications.txt"
-# Dossier pour les fichiers sensibles
+
 SENSITIVE_FOLDER = "./sensitive"
 
-# Assurez-vous que le dossier sensible existe
 if not os.path.exists(SENSITIVE_FOLDER):
     os.makedirs(SENSITIVE_FOLDER)
+    
 
-# Fonction pour calculer le hachage d'un fichier
+# hachage
 def compute_file_hash(file_path):
+
     hash_sha256 = hashlib.sha256()
+
     try:
         with open(file_path, 'rb') as f:
+
             for byte_block in iter(lambda: f.read(4096), b""):
                 hash_sha256.update(byte_block)
         return hash_sha256.hexdigest()
     except Exception as e:
-        print(f"Error computing hash for {file_path}: {e}")
+        print(f"Hash erreur for {file_path}: {e}")
         return None
 
-# Fonction pour vérifier si un fichier est sensible (copie existante dans le dossier sensible)
+def play_alert_sound():
+    try:
+        
+        pygame.mixer.init()
+        
+        pygame.mixer.music.load("sound.wav")
+
+        pygame.mixer.music.play()
+        
+        while pygame.mixer.music.get_busy():
+            
+            pygame.time.Clock().tick(10) 
+    
+    except Exception as e:
+        
+        print(f"Erreur lors de la lecture du son d'alerte : {e}")    
+
+# Verifier si un fichier est sensible
 def is_sensitive_file(file_path):
     file_name = os.path.basename(file_path)
     sensitive_file_path = os.path.join(SENSITIVE_FOLDER, file_name)
@@ -46,6 +66,10 @@ class FileChangeHandler(FileSystemEventHandler):
         if not event.is_directory:
             self.log_change("Modifié", event.src_path)
 
+    def on_deleted(self, event):
+        if not event.is_directory:
+            self.log_change("Supprimé", event.src_path)
+    
     def on_created(self, event):
         if not event.is_directory:
             self.log_change("Créé", event.src_path)
@@ -64,14 +88,14 @@ class FileChangeHandler(FileSystemEventHandler):
         
         # Afficher dans l'interface
         self.log_text.insert(END, log_entry + "\n")
-        self.log_text.yview(END)
+        self.log_text.yview(END) 
 
     def alert_file_change(self, file_path):
-        # Display an alert in the GUI
-        self.log_text.insert(END, f"*** ALERTE : Modification du fichier sensible détectée *** {file_path}\n")
+        play_alert_sound()
+        self.log_text.insert(END, f"ALERTE : Modification du fichier sensible détectée {file_path}\n")
         self.log_text.yview(END)
 
-# Fonction pour ajouter un fichier sensible
+# Ajouter un fichier sensible
 def add_sensitive_file():
     file_name = file_name_entry.get()
     if not file_name:
@@ -98,9 +122,8 @@ def add_sensitive_file():
     except Exception as e:
         messagebox.showerror("Erreur", f"Erreur lors de la création du fichier sensible: {e}")
 
-# Fonction pour démarrer l'observateur
+# Demarrer l'observateur
 def start_monitoring():
-    # Assurez-vous que le dossier à surveiller existe
     if not os.path.exists(DIR_TO_WATCH):
         os.makedirs(DIR_TO_WATCH)
 
@@ -112,30 +135,27 @@ def start_monitoring():
     status_label.config(text="Surveillance en cours...", fg="green")
     stop_button.config(state=NORMAL)
     
-    # Run the observer in a separate thread to avoid freezing the GUI
     def stop_observer():
         observer.stop()
         observer.join()
         status_label.config(text="Surveillance arrêtée.", fg="red")
         stop_button.config(state=DISABLED)
 
-    # Make sure the stop button can stop the observer
+    # Stopper l'observateur
     stop_button.config(command=stop_observer)
 
 # Créer l'interface utilisateur
 root = Tk()
-root.title("Moniteur de Fichiers")
+root.title("Projet Systeme d'exploitation")
 root.geometry("700x500")
 
-# Label pour le statut
+
 status_label = Label(root, text="Surveillance arrêtée.", fg="red", font=("Helvetica", 14))
 status_label.pack(pady=10)
 
-# Zone de texte pour afficher les logs
 log_text = Text(root, height=15, width=70, wrap=WORD, font=("Courier", 10))
 log_text.pack(pady=10)
 
-# Entry et bouton pour ajouter un fichier sensible
 file_name_label = Label(root, text="Nom du fichier sensible :")
 file_name_label.pack(pady=5)
 
@@ -145,7 +165,6 @@ file_name_entry.pack(pady=5)
 add_file_button = Button(root, text="Ajouter fichier sensible", command=add_sensitive_file)
 add_file_button.pack(pady=10)
 
-# Boutons pour démarrer, arrêter la surveillance
 start_button = Button(root, text="Démarrer la surveillance", command=lambda: threading.Thread(target=start_monitoring).start())
 start_button.pack(pady=10)
 
